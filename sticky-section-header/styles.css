@@ -1,0 +1,96 @@
+body * {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrap .container {
+  -webkit-box-shadow: 0px 0px 34px 7px rgba(0, 0, 0, 0.26);
+  box-shadow: 0px 0px 34px 7px rgba(0, 0, 0, 0.26);
+  position: relative;
+  width: 350px;
+  height: 250px;
+  overflow: auto;
+  margin: 0;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.wrap .container::-webkit-scrollbar {
+  width: 5px;
+}
+
+.wrap .container::-webkit-scrollbar-track {
+  background-color: #873c01;
+}
+
+.wrap .container::-webkit-scrollbar-thumb {
+  background-color: #fd7001;
+}
+
+.wrap .container dt {
+  font-family: Arial, Helvetica, sans-serif;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #fe8627;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 10px 15px;
+  z-index: 10;
+}
+
+.wrap .container dd {
+  background-color: #fff3ea;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+  font-size: 16px;
+  padding: 15px;
+  border-bottom: 1px solid #ffd3b0;
+  cursor: pointer;
+  position: relative;
+}
+
+.wrap .container dd::before {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  position: absolute;
+  width: 20px;
+  height: 10px;
+  left: -15px;
+  top: 19px;
+  opacity: 0;
+  content: "";
+  background-image: url("data:image/svg+xml,%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 330 330' style='enable-background:new 0 0 330 330;' xml:space='preserve'%3E%3Cpath id='XMLID_222_' d='M250.606,154.389l-150-149.996c-5.857-5.858-15.355-5.858-21.213,0.001 c-5.857,5.858-5.857,15.355,0.001,21.213l139.393,139.39L79.393,304.394c-5.857,5.858-5.857,15.355,0.001,21.213 C82.322,328.536,86.161,330,90,330s7.678-1.464,10.607-4.394l149.999-150.004c2.814-2.813,4.394-6.628,4.394-10.606 C255,161.018,253.42,157.202,250.606,154.389z'/%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3C/svg%3E%0A");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.wrap .container dd:hover {
+  background-color: #ffd3b0;
+  padding-left: 25px;
+}
+
+.wrap .container dd:hover::before {
+  left: 0;
+  opacity: 1;
+}
+/*# sourceMappingURL=styles.css.map */
