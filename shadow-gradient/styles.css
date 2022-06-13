@@ -1,0 +1,60 @@
+body {
+  text-align: center;
+  font-family: Nunito, system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", sans-serif;
+  font-weight: bold;
+  font-size: 1.8em;
+  margin-top: 3em;
+}
+
+.box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /* Required properties */
+  position: relative;
+  background: white;
+  /* Use  your own styles here */
+  margin: 45px;
+  width: 250px;
+  height: 123px;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+.box:before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(-45deg, #60efff 0%, #0061ff 100%);
+  -webkit-transform: translate3d(0px, 20px, 0) scale(0.95);
+          transform: translate3d(0px, 20px, 0) scale(0.95);
+  -webkit-filter: blur(20px);
+          filter: blur(20px);
+  opacity: var(0.7);
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+.box::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: inherit;
+  border-radius: 15px;
+}
+/*# sourceMappingURL=styles.css.map */
